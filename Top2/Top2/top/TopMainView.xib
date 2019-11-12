@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,10 +22,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NiN-Ti-knx">
-                    <rect key="frame" x="8" y="702.5" width="398" height="127.5"/>
+                    <rect key="frame" x="16" y="711.5" width="382" height="118.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bep-Eg-s5H">
-                            <rect key="frame" x="0.0" y="0.0" width="127.5" height="127.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="118.5" height="118.5"/>
                             <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Bep-Eg-s5H" secondAttribute="height" multiplier="1:1" id="W35-YK-zRI"/>
@@ -33,7 +33,7 @@
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsn-lD-Wrf">
-                            <rect key="frame" x="135.5" y="0.0" width="127" height="127.5"/>
+                            <rect key="frame" x="132" y="0.0" width="118" height="118.5"/>
                             <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="Wsn-lD-Wrf" secondAttribute="height" multiplier="1:1" id="sJ1-2v-v4c"/>
@@ -41,7 +41,7 @@
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOj-fH-TGh">
-                            <rect key="frame" x="270.5" y="0.0" width="127.5" height="127.5"/>
+                            <rect key="frame" x="263.5" y="0.0" width="118.5" height="118.5"/>
                             <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="bOj-fH-TGh" secondAttribute="height" multiplier="1:1" id="6xI-AW-ybI"/>
@@ -52,7 +52,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="bOj-fH-TGh" firstAttribute="height" secondItem="Bep-Eg-s5H" secondAttribute="height" id="67q-yK-XbC"/>
-                        <constraint firstItem="Bep-Eg-s5H" firstAttribute="width" secondItem="NiN-Ti-knx" secondAttribute="width" multiplier="0.32" id="7Qi-QF-5ej"/>
+                        <constraint firstItem="Bep-Eg-s5H" firstAttribute="width" secondItem="NiN-Ti-knx" secondAttribute="width" multiplier="0.31" id="7Qi-QF-5ej"/>
                         <constraint firstAttribute="trailing" secondItem="bOj-fH-TGh" secondAttribute="trailing" id="Gjf-KI-3Tf"/>
                         <constraint firstAttribute="bottom" secondItem="Wsn-lD-Wrf" secondAttribute="bottom" id="VKI-aY-GcU"/>
                         <constraint firstItem="Bep-Eg-s5H" firstAttribute="top" secondItem="NiN-Ti-knx" secondAttribute="top" id="Xpb-Zs-h2k"/>
@@ -73,10 +73,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Veb-FG-W2O">
-                    <rect key="frame" x="8" y="503.5" width="398" height="191"/>
+                    <rect key="frame" x="16" y="512" width="382" height="183.5"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8Y-AL-CT7">
-                            <rect key="frame" x="0.0" y="0.0" width="191" height="191"/>
+                            <rect key="frame" x="0.0" y="0.0" width="183.5" height="183.5"/>
                             <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="G8Y-AL-CT7" secondAttribute="height" multiplier="1:1" id="Lis-6s-ads"/>
@@ -84,7 +84,7 @@
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXJ-9c-N4O">
-                            <rect key="frame" x="207" y="0.0" width="191" height="191"/>
+                            <rect key="frame" x="198.5" y="0.0" width="183.5" height="183.5"/>
                             <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
                         </button>
@@ -152,17 +152,17 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vAs-VF-2tx" secondAttribute="trailing" id="FaM-bQ-67l"/>
-                <constraint firstAttribute="trailing" secondItem="Veb-FG-W2O" secondAttribute="trailing" constant="8" id="GmE-bb-ywa"/>
-                <constraint firstItem="Veb-FG-W2O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="JJG-Ku-hoE"/>
+                <constraint firstAttribute="trailing" secondItem="Veb-FG-W2O" secondAttribute="trailing" constant="16" id="GmE-bb-ywa"/>
+                <constraint firstItem="Veb-FG-W2O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JJG-Ku-hoE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="vAs-VF-2tx" secondAttribute="top" constant="44" id="M9X-SJ-ZQS"/>
-                <constraint firstAttribute="trailing" secondItem="NiN-Ti-knx" secondAttribute="trailing" constant="8" id="PBR-iX-6sF"/>
+                <constraint firstAttribute="trailing" secondItem="NiN-Ti-knx" secondAttribute="trailing" constant="16" id="PBR-iX-6sF"/>
                 <constraint firstItem="jtr-HK-E9k" firstAttribute="top" secondItem="vAs-VF-2tx" secondAttribute="bottom" id="Ru3-Qn-QKn"/>
                 <constraint firstItem="r4X-Ii-zT6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="X6p-h7-cw1"/>
                 <constraint firstItem="r4X-Ii-zT6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bz0-pG-hfQ"/>
                 <constraint firstAttribute="trailing" secondItem="r4X-Ii-zT6" secondAttribute="trailing" constant="16" id="jsE-86-91F"/>
                 <constraint firstItem="vAs-VF-2tx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lds-zc-qCS"/>
-                <constraint firstItem="NiN-Ti-knx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="pPz-08-vxk"/>
-                <constraint firstItem="NiN-Ti-knx" firstAttribute="top" secondItem="Veb-FG-W2O" secondAttribute="bottom" constant="8" id="qyE-4a-bMs"/>
+                <constraint firstItem="NiN-Ti-knx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pPz-08-vxk"/>
+                <constraint firstItem="NiN-Ti-knx" firstAttribute="top" secondItem="Veb-FG-W2O" secondAttribute="bottom" constant="16" id="qyE-4a-bMs"/>
                 <constraint firstItem="jtr-HK-E9k" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="tEq-V5-mzP"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NiN-Ti-knx" secondAttribute="bottom" constant="32" id="uEU-vZ-uTR"/>
                 <constraint firstItem="jtr-HK-E9k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vob-Sm-T19"/>
