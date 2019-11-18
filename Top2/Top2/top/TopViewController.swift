@@ -12,6 +12,7 @@ import PGFramework
 
 // MARK: - Property
 class TopViewController: BaseViewController {
+    @IBOutlet weak var mainView: TopMainView!
     
 }
 
@@ -19,6 +20,7 @@ class TopViewController: BaseViewController {
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        mainView.delegate = self
     }
     
     override func viewDidLoad() {
@@ -31,7 +33,13 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
+extension TopViewController:TopMainViewDelegate {
+    func menuButton(_ sender: UIButton) {
+        let topMenuViewController = TopMenuViewController()
+        transitionViewController(from: self, to: topMenuViewController)
+        animatorManager.navigationType = .slide_push
+    }
+    
     
 }
 

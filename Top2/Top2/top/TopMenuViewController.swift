@@ -7,24 +7,47 @@
 //
 
 import UIKit
+import PGFramework
 
-class TopMenuViewController: UIViewController {
 
+// MARK: - Property
+class TopMenuViewController: BaseViewController {
+    @IBOutlet weak var menuMainView: TopMenuView!
+    var secondViewController = SecondViewController()
+}
+
+// MARK: - Life cycle
+extension TopMenuViewController {
+    override func loadView() {
+        super.loadView()
+        menuMainView.delegate = self
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    */
-
 }
+
+// MARK: - Protocol
+extension TopMenuViewController:TopMenuViewDelegate {
+    func didselectedRow(indexpath: IndexPath) {
+        switch indexpath.row {
+        case 0:
+            transitionViewController(from: self, to: secondViewController)
+        default:
+            print("99")
+        }
+    }
+    
+    
+}
+
+// MARK: - method
+extension TopMenuViewController {
+    
+}
+

@@ -7,24 +7,36 @@
 //
 
 import UIKit
-
-class TopMenuTableViewCell: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+import PGFramework
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+protocol TopMenuTableViewCellDelegate: NSObjectProtocol{
+    
 }
+
+extension TopMenuTableViewCellDelegate {
+    
+}
+// MARK: - Property
+class TopMenuTableViewCell: BaseTableViewCell {
+    weak var delegate: TopMenuTableViewCellDelegate? = nil
+    @IBOutlet weak var menuLabel: UILabel!
+}
+
+// MARK: - Life cycle
+extension TopMenuTableViewCell {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}
+
+// MARK: - Protocol
+extension TopMenuTableViewCell {
+    
+}
+
+// MARK: - method
+extension TopMenuTableViewCell {
+    
+}
+

@@ -7,24 +7,36 @@
 //
 
 import UIKit
+import PGFramework
 
-class SecondViewController: UIViewController {
 
+// MARK: - Property
+class SecondViewController: BaseViewController {
+    
+}
+
+// MARK: - Life cycle
+extension SecondViewController {
+    override func loadView() {
+        super.loadView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    */
-
 }
+
+// MARK: - Protocol
+extension SecondViewController {
+    
+}
+
+// MARK: - method
+extension SecondViewController {
+    
+}
+
