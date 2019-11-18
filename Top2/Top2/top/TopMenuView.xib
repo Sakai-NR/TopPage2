@@ -7,10 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="Top2" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMenuView" customModule="Top2" customModuleProvider="target">
             <connections>
-                <outlet property="mainView" destination="Ce0-Cl-oxl" id="LB4-Ne-4Mu"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="menuTableView" destination="xbL-7x-oZA" id="JmZ-bk-WZo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,20 +17,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-Cl-oxl" customClass="TopMainView" customModule="Top2" customModuleProvider="target">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xbL-7x-oZA">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                </view>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ce0-Cl-oxl" secondAttribute="bottom" id="Ekt-50-rwF"/>
-                <constraint firstItem="Ce0-Cl-oxl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HCx-ej-efQ"/>
-                <constraint firstItem="Ce0-Cl-oxl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Q84-YH-oJ7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ce0-Cl-oxl" secondAttribute="trailing" id="vOD-MU-ooq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xbL-7x-oZA" secondAttribute="trailing" id="Isp-vv-Clo"/>
+                <constraint firstItem="xbL-7x-oZA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QzD-4r-Dea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xbL-7x-oZA" secondAttribute="bottom" id="e9L-kJ-HgB"/>
+                <constraint firstItem="xbL-7x-oZA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eM7-28-jSh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </view>
     </objects>
 </document>

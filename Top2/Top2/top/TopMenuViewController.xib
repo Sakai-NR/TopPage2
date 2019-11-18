@@ -7,9 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="Top2" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMenuViewController" customModule="Top2" customModuleProvider="target">
             <connections>
-                <outlet property="mainView" destination="Ce0-Cl-oxl" id="LB4-Ne-4Mu"/>
+                <outlet property="menuMainView" destination="y53-nJ-htr" id="0Uy-VM-TBc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,17 +18,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ce0-Cl-oxl" customClass="TopMainView" customModule="Top2" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y53-nJ-htr" customClass="TopMenuView" customModule="Top2" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ce0-Cl-oxl" secondAttribute="bottom" id="Ekt-50-rwF"/>
-                <constraint firstItem="Ce0-Cl-oxl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HCx-ej-efQ"/>
-                <constraint firstItem="Ce0-Cl-oxl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Q84-YH-oJ7"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ce0-Cl-oxl" secondAttribute="trailing" id="vOD-MU-ooq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y53-nJ-htr" secondAttribute="trailing" id="4rz-sb-5NP"/>
+                <constraint firstItem="y53-nJ-htr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JLH-94-JAI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y53-nJ-htr" secondAttribute="bottom" id="LAg-nw-FAa"/>
+                <constraint firstItem="y53-nJ-htr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LsM-Q7-4PB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="139" y="131"/>
