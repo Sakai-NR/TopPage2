@@ -12,7 +12,7 @@ import PGFramework
 
 protocol TopMainViewDelegate: NSObjectProtocol{
     func menuButton(_ sender: UIButton)
-    
+    func menberButton(_ sender: UIButton)
 }
 
 extension TopMainViewDelegate {
@@ -21,10 +21,12 @@ extension TopMainViewDelegate {
 // MARK: - Property
 class TopMainView: BaseView {
     weak var delegate: TopMainViewDelegate? = nil
+    @IBOutlet weak var slideImageView: UIImageView!
     @IBAction func menuButton(_ sender: UIButton) {
         delegate?.menuButton(sender)
     }
-    @IBAction func memberButton(_ sender: UIButton) {
+    @IBAction func menberButton(_ sender: UIButton) {
+//        delegate?.menberButton(sender)
     }
 }
 

@@ -19,6 +19,8 @@
 		8F6D13E1237C38B000812268 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D13DF237C38B000812268 /* SecondViewController.xib */; };
 		8F6D14322384341700812268 /* TopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D14302384341700812268 /* TopHeaderView.swift */; };
 		8F6D14332384341700812268 /* TopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D14312384341700812268 /* TopHeaderView.xib */; };
+		8F6D143A2388FF2F00812268 /* TopMenberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6D14382388FF2F00812268 /* TopMenberViewController.swift */; };
+		8F6D143B2388FF2F00812268 /* TopMenberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6D14392388FF2F00812268 /* TopMenberViewController.xib */; };
 		8FE8E46D2360672F0031D624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8E46C2360672F0031D624 /* AppDelegate.swift */; };
 		8FE8E46F2360672F0031D624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8E46E2360672F0031D624 /* SceneDelegate.swift */; };
 		8FE8E4742360672F0031D624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8E4722360672F0031D624 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		8F6D13DF237C38B000812268 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		8F6D14302384341700812268 /* TopHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeaderView.swift; sourceTree = "<group>"; };
 		8F6D14312384341700812268 /* TopHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeaderView.xib; sourceTree = "<group>"; };
+		8F6D14382388FF2F00812268 /* TopMenberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenberViewController.swift; sourceTree = "<group>"; };
+		8F6D14392388FF2F00812268 /* TopMenberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMenberViewController.xib; sourceTree = "<group>"; };
 		8FE8E4692360672F0031D624 /* Top2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Top2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE8E46C2360672F0031D624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FE8E46E2360672F0031D624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +91,19 @@
 				8F6D13D3237BAD6E00812268 /* TopMenuView.xib */,
 				8F6D13DA237BB22500812268 /* TopMenuTableViewCell.swift */,
 				8F6D13DB237BB22500812268 /* TopMenuTableViewCell.xib */,
+				8F6D14302384341700812268 /* TopHeaderView.swift */,
+				8F6D14312384341700812268 /* TopHeaderView.xib */,
 			);
 			path = menuPage;
+			sourceTree = "<group>";
+		};
+		8F6D14372388FEB200812268 /* menberPage */ = {
+			isa = PBXGroup;
+			children = (
+				8F6D14382388FF2F00812268 /* TopMenberViewController.swift */,
+				8F6D14392388FF2F00812268 /* TopMenberViewController.xib */,
+			);
+			path = menberPage;
 			sourceTree = "<group>";
 		};
 		8FE8E4602360672F0031D624 = {
@@ -134,8 +149,7 @@
 				8F6D1434238436BB00812268 /* menuPage */,
 				8F6D13DE237C38B000812268 /* SecondViewController.swift */,
 				8F6D13DF237C38B000812268 /* SecondViewController.xib */,
-				8F6D14302384341700812268 /* TopHeaderView.swift */,
-				8F6D14312384341700812268 /* TopHeaderView.xib */,
+				8F6D14372388FEB200812268 /* menberPage */,
 			);
 			path = top;
 			sourceTree = "<group>";
@@ -218,6 +232,7 @@
 				8F6D13E1237C38B000812268 /* SecondViewController.xib in Resources */,
 				8FE8E479236067330031D624 /* Assets.xcassets in Resources */,
 				8FE8E4742360672F0031D624 /* Main.storyboard in Resources */,
+				8F6D143B2388FF2F00812268 /* TopMenberViewController.xib in Resources */,
 				8F6D13D9237BAFF800812268 /* TopMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6D143A2388FF2F00812268 /* TopMenberViewController.swift in Sources */,
 				8F6D13DC237BB22500812268 /* TopMenuTableViewCell.swift in Sources */,
 				8FE8E485236067A30031D624 /* TopViewController.swift in Sources */,
 				8FE8E46D2360672F0031D624 /* AppDelegate.swift in Sources */,

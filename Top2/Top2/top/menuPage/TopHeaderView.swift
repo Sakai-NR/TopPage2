@@ -11,6 +11,7 @@ import PGFramework
 
 
 protocol TopHeaderViewDelegate: NSObjectProtocol{
+    func backButton(_ sender: UIButton)
     
 }
 
@@ -20,13 +21,18 @@ extension TopHeaderViewDelegate {
 // MARK: - Property
 class TopHeaderView: BaseView {
     weak var delegate: TopHeaderViewDelegate? = nil
-   
+    @IBAction func backButton(_ sender: UIButton) {
+        delegate?.backButton(sender)
+    }
+    
 }
 
 // MARK: - Life cycle
 extension TopHeaderView {
     override func awakeFromNib() {
         super.awakeFromNib()
+       
+        
     }
 }
 
@@ -37,6 +43,7 @@ extension TopHeaderView {
 
 // MARK: - method
 extension TopHeaderView {
+    
     
 }
 

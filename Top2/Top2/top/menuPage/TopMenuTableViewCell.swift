@@ -27,6 +27,11 @@ class TopMenuTableViewCell: BaseTableViewCell {
 extension TopMenuTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+//    let blurEffect = UIBlurEffect(style: .light)
+//        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+//        visualEffectView.effect = self.view.frame
+        
+        
     }
 }
 

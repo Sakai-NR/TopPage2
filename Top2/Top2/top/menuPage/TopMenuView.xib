@@ -17,17 +17,25 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqQ-aQ-PJ7">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xbL-7x-oZA">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="16" y="44" width="298" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xbL-7x-oZA" secondAttribute="trailing" id="Isp-vv-Clo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="nqQ-aQ-PJ7" secondAttribute="bottom" id="95Z-ax-epi"/>
+                <constraint firstItem="nqQ-aQ-PJ7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="A9d-bN-dxq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xbL-7x-oZA" secondAttribute="trailing" constant="100" id="Isp-vv-Clo"/>
+                <constraint firstItem="nqQ-aQ-PJ7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JDa-fO-JZR"/>
                 <constraint firstItem="xbL-7x-oZA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="QzD-4r-Dea"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xbL-7x-oZA" secondAttribute="bottom" id="e9L-kJ-HgB"/>
-                <constraint firstItem="xbL-7x-oZA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eM7-28-jSh"/>
+                <constraint firstItem="xbL-7x-oZA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eM7-28-jSh"/>
+                <constraint firstItem="nqQ-aQ-PJ7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xeI-z1-Ps0"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>

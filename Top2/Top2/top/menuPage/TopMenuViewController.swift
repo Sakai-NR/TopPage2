@@ -13,6 +13,7 @@ import PGFramework
 // MARK: - Property
 class TopMenuViewController: BaseViewController {
     @IBOutlet weak var menuMainView: TopMenuView!
+    @IBOutlet weak var headerView: TopHeaderView!
     var secondViewController = SecondViewController()
 }
 
@@ -21,6 +22,7 @@ extension TopMenuViewController {
     override func loadView() {
         super.loadView()
         menuMainView.delegate = self
+        headerView.delegate = self
     }
     
     override func viewDidLoad() {
@@ -42,8 +44,13 @@ extension TopMenuViewController:TopMenuViewDelegate {
             print("99")
         }
     }
-    
-    
+}
+extension TopMenuViewController:TopHeaderViewDelegate{
+    func backButton(_ sender: UIButton) {
+        let topViewController = TopViewController()
+        transitionViewController(from: self, to: topViewController)
+        animatorManager.navigationType = .slide_push
+    }
 }
 
 // MARK: - method

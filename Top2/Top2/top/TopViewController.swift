@@ -21,6 +21,7 @@ extension TopViewController {
     override func loadView() {
         super.loadView()
         mainView.delegate = self
+        
     }
     
     override func viewDidLoad() {
@@ -33,15 +34,25 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController:TopMainViewDelegate {
+extension TopViewController:TopMainViewDelegate{
     func menuButton(_ sender: UIButton) {
         let topMenuViewController = TopMenuViewController()
         transitionViewController(from: self, to: topMenuViewController)
-        animatorManager.navigationType = .slide_push
+        animatorManager.navigationType = . slide_pop
+    }
+    
+    func menberButton(_ sender: UIButton) {
+        let topMenberViewController = TopMenberViewController()
+        transitionViewController(from: self, to: topMenberViewController)
+        animatorManager.navigationType = .slide_pop
     }
     
     
-}
+
+    }
+    
+    
+
 
 // MARK: - method
 extension TopViewController {

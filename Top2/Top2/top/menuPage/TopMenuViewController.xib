@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMenuViewController" customModule="Top2" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="hby-L8-shS" id="2Us-Iq-ann"/>
                 <outlet property="menuMainView" destination="y53-nJ-htr" id="0Uy-VM-TBc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,8 +20,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y53-nJ-htr" customClass="TopMenuView" customModule="Top2" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hby-L8-shS" customClass="TopHeaderView" customModule="Top2" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="u2b-7j-uM2"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,10 +35,14 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y53-nJ-htr" secondAttribute="trailing" id="4rz-sb-5NP"/>
                 <constraint firstItem="y53-nJ-htr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JLH-94-JAI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y53-nJ-htr" secondAttribute="bottom" id="LAg-nw-FAa"/>
-                <constraint firstItem="y53-nJ-htr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LsM-Q7-4PB"/>
+                <constraint firstItem="y53-nJ-htr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="LsM-Q7-4PB"/>
+                <constraint firstItem="y53-nJ-htr" firstAttribute="top" secondItem="hby-L8-shS" secondAttribute="bottom" constant="8" id="SYc-v1-RgX"/>
+                <constraint firstItem="hby-L8-shS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ahV-PB-mSh"/>
+                <constraint firstItem="hby-L8-shS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dbA-lg-2B9"/>
+                <constraint firstItem="hby-L8-shS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eO9-Ey-Hxa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="131"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </view>
     </objects>
 </document>
