@@ -67,7 +67,7 @@ extension TopViewController {
     
     slideArray = [slidePic0!,slidePic1!,slidePic2!]
     
-    timer1 = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
+    timer1 = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: true, block: { (timer) in
             
         if (self.countUp > 2){
             self.mainView.slideImageView.image = UIImage(named: "hikakin")
