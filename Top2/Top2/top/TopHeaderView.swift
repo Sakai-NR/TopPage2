@@ -20,6 +20,7 @@ extension TopHeaderViewDelegate {
 // MARK: - Property
 class TopHeaderView: BaseView {
     weak var delegate: TopHeaderViewDelegate? = nil
+   
 }
 
 // MARK: - Life cycle
