@@ -21,13 +21,16 @@ extension TopMainViewDelegate {
 // MARK: - Property
 class TopMainView: BaseView {
     weak var delegate: TopMainViewDelegate? = nil
+     let topHedderView = TopHeaderView()
     @IBOutlet weak var slideImageView: UIImageView!
     @IBAction func menuButton(_ sender: UIButton) {
         delegate?.menuButton(sender)
+
     }
     @IBAction func menberButton(_ sender: UIButton) {
 //        delegate?.menberButton(sender)
     }
+
 }
 
 // MARK: - Life cycle

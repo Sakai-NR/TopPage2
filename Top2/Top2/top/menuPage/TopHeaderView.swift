@@ -23,6 +23,12 @@ class TopHeaderView: BaseView {
     weak var delegate: TopHeaderViewDelegate? = nil
     @IBAction func backButton(_ sender: UIButton) {
         delegate?.backButton(sender)
+        
+    }
+    @IBOutlet weak var noText: UILabel!
+    
+    @IBAction func noButton(_ sender: UIButton) {
+        
     }
     
 }
@@ -31,7 +37,7 @@ class TopHeaderView: BaseView {
 extension TopHeaderView {
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+        labelHidden()
         
     }
 }
@@ -44,6 +50,9 @@ extension TopHeaderView {
 // MARK: - method
 extension TopHeaderView {
     
+    func labelHidden(){
+    noText.isHidden = true
+    }
     
 }
 

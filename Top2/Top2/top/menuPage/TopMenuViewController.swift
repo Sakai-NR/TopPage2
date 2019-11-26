@@ -14,7 +14,10 @@ import PGFramework
 class TopMenuViewController: BaseViewController {
     @IBOutlet weak var menuMainView: TopMenuView!
     @IBOutlet weak var headerView: TopHeaderView!
+    @IBOutlet weak var mainView: TopMainView!
     var secondViewController = SecondViewController()
+    let topHedderView : [TopHeaderView] = []
+   
 }
 
 // MARK: - Life cycle
@@ -23,6 +26,8 @@ extension TopMenuViewController {
         super.loadView()
         menuMainView.delegate = self
         headerView.delegate = self
+        mainViewEfect()
+//        hedderEffect()
     }
     
     override func viewDidLoad() {
@@ -55,6 +60,17 @@ extension TopMenuViewController:TopHeaderViewDelegate{
 
 // MARK: - method
 extension TopMenuViewController {
-    
+    func mainViewEfect(){
+        let blurEffect = UIBlurEffect(style: .regular)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = self.mainView.frame
+        self.mainView.addSubview(visualEffectView)
+        
 }
-
+    func hedderEffect(){
+        let blurEffect = UIBlurEffect(style: .regular)
+        let visualEffectView = UIVisualEffectView(effect: blurEffect)
+        visualEffectView.frame = self.headerView.frame
+        self.headerView.addSubview(visualEffectView)
+    }
+  }

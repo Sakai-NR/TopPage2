@@ -9,18 +9,29 @@
 import UIKit
 import PGFramework
 
-
 // MARK: - Property
 class TopViewController: BaseViewController {
     @IBOutlet weak var mainView: TopMainView!
     
+    var slideArray = [UIImage]()
+    
+    let slidePic0 = UIImage(named: "hikakin")
+    let slidePic1 = UIImage(named: "fischers")
+    let slidePic2 = UIImage(named: "tokaionair")
+    
+    var timer1 = Timer()
+    
+    var countUp = 0
+      
 }
 
 // MARK: - Life cycle
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        
         mainView.delegate = self
+        slideImageSet()
         
     }
     
@@ -47,15 +58,25 @@ extension TopViewController:TopMainViewDelegate{
         animatorManager.navigationType = .slide_pop
     }
     
+}
     
-
-    }
-    
-    
-
-
 // MARK: - method
 extension TopViewController {
     
+    func slideImageSet(){
+    
+    slideArray = [slidePic0!,slidePic1!,slidePic2!]
+    
+    timer1 = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
+            
+        if (self.countUp > 2){
+            self.mainView.slideImageView.image = UIImage(named: "hikakin")
+            
+        }else{
+            self.mainView.slideImageView.image = self.slideArray[self.countUp]
+        }
+        self.countUp = self.countUp + 1
+        })
+    }
 }
 

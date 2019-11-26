@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMenuViewController" customModule="Top2" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="hby-L8-shS" id="2Us-Iq-ann"/>
+                <outlet property="mainView" destination="PRd-uE-Ulq" id="1pn-Ah-Hm6"/>
                 <outlet property="menuMainView" destination="y53-nJ-htr" id="0Uy-VM-TBc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,8 +20,12 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRd-uE-Ulq" customClass="TopMainView" customModule="Top2" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y53-nJ-htr" customClass="TopMenuView" customModule="Top2" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                    <rect key="frame" x="0.0" y="94" width="294" height="768"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hby-L8-shS" customClass="TopHeaderView" customModule="Top2" customModuleProvider="target">
@@ -32,7 +37,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y53-nJ-htr" secondAttribute="trailing" id="4rz-sb-5NP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="y53-nJ-htr" secondAttribute="trailing" constant="120" id="4rz-sb-5NP"/>
+                <constraint firstItem="PRd-uE-Ulq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9ht-rq-ceT"/>
                 <constraint firstItem="y53-nJ-htr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="JLH-94-JAI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="y53-nJ-htr" secondAttribute="bottom" id="LAg-nw-FAa"/>
                 <constraint firstItem="y53-nJ-htr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="LsM-Q7-4PB"/>
@@ -40,6 +46,9 @@
                 <constraint firstItem="hby-L8-shS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ahV-PB-mSh"/>
                 <constraint firstItem="hby-L8-shS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dbA-lg-2B9"/>
                 <constraint firstItem="hby-L8-shS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eO9-Ey-Hxa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PRd-uE-Ulq" secondAttribute="trailing" id="fR9-ve-dtz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PRd-uE-Ulq" secondAttribute="bottom" id="kEj-jM-a4Y"/>
+                <constraint firstItem="PRd-uE-Ulq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pSY-6D-4kL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>

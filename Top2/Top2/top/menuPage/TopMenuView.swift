@@ -22,7 +22,7 @@ extension TopMenuViewDelegate {
 class TopMenuView: BaseView {
     weak var delegate: TopMenuViewDelegate? = nil
     @IBOutlet weak var menuTableView: UITableView!
-    var menulabelsName:[String] = ["予約","スタンプ","クーポン","4","5","6","7","8","9","10","11","12","13","14","15","16"]
+    var menulabelsName:[String] = ["モバイル会員","","クーポン","4","5","6","7","8","9","10","11","12","13","14","15","16"]
 }
 
 // MARK: - Life cycle
